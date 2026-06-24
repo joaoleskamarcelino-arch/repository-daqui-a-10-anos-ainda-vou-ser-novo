@@ -2,5 +2,5 @@ body{
     background-color: rgb(244, 238, 163);
 }
 h1{
-    background-color: color-mix(in srgb-linear, color percentage, color percentage);
+    background-color: rgb(red, green, blue);
 }

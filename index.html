@@ -1,94 +1,58 @@
 
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Mentalista</title>
+    <title>Site do Mentalista</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>O Mentalista</h1>
-        <p>Uma série cheia de mistérios e investigação</p>
-    </header>
+    <h1>O MENTALISTA</h1>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#personagens">Personagens</a>
-        <a href="#curiosidades">Curiosidades</a>
-        <a href="#quiz">Quiz</a>
-    </nav>
+    <hr>
 
-    <section id="sobre">
-        <h2>Sobre a série</h2>
+    <h2>Sobre a série</h2>
 
-        <p>
-            The Mentalist é uma série policial que conta a história
-            de Patrick Jane, um homem muito inteligente que ajuda
-            a polícia a resolver crimes usando sua capacidade de
-            observar detalhes e entender o comportamento das pessoas.
-        </p>
+    <p>
+        O Mentalista é uma série de televisão que conta a história
+        de Patrick Jane, um homem muito inteligente que ajuda a
+        polícia a resolver crimes.
+    </p>
 
-        <p>
-            A série mistura investigação, suspense, mistério e humor.
-            Seu principal objetivo é encontrar o criminoso conhecido
-            como Red John.
-        </p>
-    </section>
+    <p>
+        Ele trabalha com uma equipe de investigadores e tenta
+        encontrar um criminoso chamado Red John.
+    </p>
 
-    <section id="personagens">
-        <h2>Personagens principais</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/36/The_Mentalist_Season_1_DVD.jpg" width="200">
 
-        <div class="personagem">
-            <h3>Patrick Jane</h3>
-            <p>Um consultor que usa sua inteligência para solucionar crimes.</p>
-        </div>
+    <h2>Personagens</h2>
 
-        <div class="personagem">
-            <h3>Teresa Lisbon</h3>
-            <p>Uma agente responsável pela equipe de investigação.</p>
-        </div>
+    <ul>
+        <li>Patrick Jane</li>
+        <li>Teresa Lisbon</li>
+        <li>Kimball Cho</li>
+        <li>Wayne Rigsby</li>
+    </ul>
 
-        <div class="personagem">
-            <h3>Kimball Cho</h3>
-            <p>Um agente sério, inteligente e muito observador.</p>
-        </div>
+    <h2>Curiosidade</h2>
 
-        <div class="personagem">
-            <h3>Wayne Rigsby</h3>
-            <p>Um agente dedicado que faz parte da equipe de Lisbon.</p>
-        </div>
-    </section>
+    <p id="curiosidade">Clique no botão para ver uma curiosidade.</p>
 
-    <section id="curiosidades">
-        <h2>Curiosidade</h2>
+    <button onclick="curiosidade()">Clique aqui</button>
 
-        <p id="textoCuriosidade">
-            Clique no botão para descobrir uma curiosidade!
-        </p>
+    <h2>Pergunta</h2>
 
-        <button onclick="mostrarCuriosidade()">
-            Descobrir curiosidade
-        </button>
-    </section>
+    <p>Qual é o nome do inimigo de Patrick Jane?</p>
 
-    <section id="quiz">
-        <h2>Quiz do Mentalista</h2>
+    <button onclick="resposta1()">Red John</button>
+    <button onclick="resposta2()">Sherlock</button>
 
-        <p>Qual é o nome do principal inimigo de Patrick Jane?</p>
+    <p id="resposta"></p>
 
-        <button onclick="verificarResposta('Red John')">Red John</button>
-        <button onclick="verificarResposta('Sherlock')">Sherlock</button>
-        <button onclick="verificarResposta('Moriarty')">Moriarty</button>
+    <hr>
 
-        <p id="resultado"></p>
-    </section>
-
-    <footer>
-        <p>Site criado por um fã de O Mentalista - 2026</p>
-    </footer>
+    <p>Trabalho feito sobre a série O Mentalista.</p>
 
     <script src="script.js"></script>
 
